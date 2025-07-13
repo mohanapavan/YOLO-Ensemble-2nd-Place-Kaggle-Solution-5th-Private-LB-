@@ -26,11 +26,6 @@ A powerful ensemble of two YOLO models (Model A + Model B) that achieved:
 for [Multi-Instance Object Detection Challenge](https://www.kaggle.com/competitions/multi-instance-object-detection-challenge).
 
 ## 🔧 Key Features
-- **Hybrid Architecture**: Combines strengths of Model A (strength) and Model B (strength)
-- **Enhanced Accuracy**: X% improvement over single-model baseline
-- **Competition-Proven**: Top-tier results in [Kaggle Competition Name]
-
-## 🔧 Key Features
 
 ### 🔍 IoU-Based Consensus
 - Uses **mAP@50** to validate overlapping predictions  
