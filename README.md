@@ -11,7 +11,7 @@
 - Model B detected 3 objects (blue boxes)
 - Our ensemble combines both:
   - Keeps all unique detections
-  - keeps unique ones from both models
+  - keeps the common detections
   - Result: All objects captured
 
 **Why It Works**:
