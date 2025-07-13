@@ -1,6 +1,6 @@
 # 🏆 YOLO Ensemble: 2nd Place (Public LB) & 5th Place (Private LB) - Kaggle Competition
 
-![Leaderboard Proof](<img width="1891" height="912" alt="Screenshot 2025-07-13 114832" src="https://github.com/user-attachments/assets/5d097557-b999-45ad-bf6c-9c23dec82a0d" />)
+![Leaderboard Proof](https://github.com/mohanapavan/YOLO-Ensemble-2nd-Place-Kaggle-Solution-5th-Private-LB-/blob/main/results/leaderBoard.png?raw=true)
 
 ## 🔍 Detection Results
 
@@ -50,17 +50,17 @@ Model A is built on YOLOv11x, customized to prioritize precision over recall, re
 
 ### 🛠️ Configuration Highlights
 
-# Architecture
+#### Architecture
 model: yolo11x.pt        # yolo11x with pretrained weights
 imgsz: 640               # Optimal resolution for precision
 
-# Training
+#### Training
 epochs: 50               # Full training cycles
 batch: 16                # Balanced memory/performance
 optimizer: SGD           # With cosine learning rate
 lr0: 0.0005              # Conservative starting rate
 
-# Augmentation
+#### Augmentation
 hsv_s: 0.7               # Controlled color variation
 fliplr: 0.25             # Moderate horizontal flips
 cutmix: 0.3              # Object blending augmentation
@@ -80,17 +80,17 @@ Model B is based on the compact and fast YOLOv8s architecture, trained at a high
 
 ### 🛠️ Configuration Highlights
 
-# Architecture
+#### Architecture
 model: yolov8s.pt        # Lightweight YOLOv8s with pretrained weights
 imgsz: 1280              # High-resolution input for better object scale handling
 
-# Training
+#### Training
 epochs: 50               # Same training duration as Model A
 batch: 16                # Consistent batch size for fair comparison
 optimizer: SGD           # Paired with cosine LR schedule
 lr0: 0.001               # Slightly higher initial LR than Model A
 
-# Augmentation
+#### Augmentation
 hsv_s: 0.7               # Vary saturation for lighting diversity
 fliplr: 0.2              # Mild horizontal flips
 flipud: 0.4              # Aggressive vertical flipping
