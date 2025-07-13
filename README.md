@@ -51,19 +51,19 @@ Model A is built on YOLOv11x, customized to prioritize precision over recall, re
 ### 🛠️ Configuration Highlights
 
 #### Architecture
-model: yolo11x.pt        # yolo11x with pretrained weights
-imgsz: 640               # Optimal resolution for precision
+- model: yolo11x.pt        # yolo11x with pretrained weights
+- imgsz: 640               # Optimal resolution for precision
 
 #### Training
-epochs: 50               # Full training cycles
-batch: 16                # Balanced memory/performance
-optimizer: SGD           # With cosine learning rate
-lr0: 0.0005              # Conservative starting rate
+- epochs: 50               # Full training cycles
+- batch: 16                # Balanced memory/performance
+- optimizer: SGD           # With cosine learning rate
+- lr0: 0.0005              # Conservative starting rate
 
 #### Augmentation
-hsv_s: 0.7               # Controlled color variation
-fliplr: 0.25             # Moderate horizontal flips
-cutmix: 0.3              # Object blending augmentation
+- hsv_s: 0.7               # Controlled color variation
+- fliplr: 0.25             # Moderate horizontal flips
+- cutmix: 0.3              # Object blending augmentation
 
 ### 🚀 Other Critical Decisions
 
@@ -81,22 +81,22 @@ Model B is based on the compact and fast YOLOv8s architecture, trained at a high
 ### 🛠️ Configuration Highlights
 
 #### Architecture
-model: yolov8s.pt        # Lightweight YOLOv8s with pretrained weights
-imgsz: 1280              # High-resolution input for better object scale handling
+- model: yolov8s.pt        # Lightweight YOLOv8s with pretrained weights
+- imgsz: 1280              # High-resolution input for better object scale handling
 
 #### Training
-epochs: 50               # Same training duration as Model A
-batch: 16                # Consistent batch size for fair comparison
-optimizer: SGD           # Paired with cosine LR schedule
-lr0: 0.001               # Slightly higher initial LR than Model A
+- epochs: 50               # Same training duration as Model A
+- batch: 16                # Consistent batch size for fair comparison
+- optimizer: SGD           # Paired with cosine LR schedule
+- lr0: 0.001               # Slightly higher initial LR than Model A
 
 #### Augmentation
-hsv_s: 0.7               # Vary saturation for lighting diversity
-fliplr: 0.2              # Mild horizontal flips
-flipud: 0.4              # Aggressive vertical flipping
-cutmix: 0.3              # Region-level data mixing
-scale: 0.5               # Strong object scaling for robustness
-erasing: 0.3             # Random patch erasing for regularization
+- hsv_s: 0.7               # Vary saturation for lighting diversity
+- fliplr: 0.2              # Mild horizontal flips
+- flipud: 0.4              # Aggressive vertical flipping
+- cutmix: 0.3              # Region-level data mixing
+- scale: 0.5               # Strong object scaling for robustness
+- erasing: 0.3             # Random patch erasing for regularization
 
 
 ### 🚀 Other Critical Decisions
