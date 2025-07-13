@@ -4,7 +4,7 @@
 
 ## 🔍 Detection Results
 
-!([results/ensemble/detection_example.jpg](https://github.com/mohanapavan/YOLO-Ensemble-2nd-Place-Kaggle-Solution-5th-Private-LB-/blob/main/results/result2.png?raw=true))
+![results/ensemble/detection_example.jpg](https://github.com/mohanapavan/YOLO-Ensemble-2nd-Place-Kaggle-Solution-5th-Private-LB-/blob/main/results/result2.png?raw=true)
 
 **What You're Seeing**:
 - Model A detected 2 objects (red boxes)
